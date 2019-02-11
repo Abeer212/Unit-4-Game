@@ -1,0 +1,28 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+
+#blueGem,
+#greenGem,
+#yellowGem,
+#redGem {
+  height: 100px;
+  width: 100px;
+}
+
+.numberToGet,
+.winsAndLosses,
+.userTotal {
+  /* font-weight: bold; */
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* .row {
+  margin-right: 0;
+  margin-left: 0;
+} */

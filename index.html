@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crystal-Collector</title>
+    <link
+      rel="stylesheet"
+      src="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <div
+      class="jumbotron jumbotron-fluid p-3 mb-2 bg-danger text-white text-center"
+    >
+      <div class="container">
+        <h1 class="display-4">CrystalCollector!</h1>
+      </div>
+    </div>
+
+  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header">How to Play</div>
+            <div class="card-body">
+                <h5 class="card-title">Instructions</h5>
+                    <p class="card-text">
+                        You will be given a random number at the start of the game.
+                    </p>
+                    <p class="card-text">
+                        There are four crystals below. By clicking on a crystal you will add a
+                        specific amount of points to your score.
+                    </p>
+                    <p class="card-text">
+                        You win the game by matching your total score to the random number,
+                        you lose the game if your total score goes above the random number.
+                    </p>
+                    <p class="card-text">
+                        The value of each crystal is hidden from you until you click on it.
+                    </p>
+                    <p class="card-text">
+                        Each time the game starts, the game will change the values of each
+                        crystal.
+                    </p>
+            </div>
+        </div>
+    
+
+    <div class="numberToGet bg-danger mb-3" style="max-width: 18rem;">
+        <h3>
+            Number To Get:
+            <span id="randomNumber"></span>
+        </h3>
+    </div>
+
+    <div class="winsAndLosses bg-danger mb-3" style="max-width: 18rem;">
+        <h3>Wins:
+                <span id= "numberWins"></span>
+            </br>
+            Losses: 
+                <span id= "numberLosses"></span>
+            </h3>
+    </div>
+
+    <div>
+        <img src="assets/images/bluegem.png" class="border border-primary" id="blueGem" alt="This is a blue gem"> </img> 
+        <img src="assets/images/greengem.png" class="border border-primary" id="greenGem" alt="This is a green gem"> </img> 
+        <img src="assets/images/yellowgem.png" class="border border-primary" id="yellowGem" alt="This is a yellow gem"> </img> 
+        <img src="assets/images/redgem.png" class="border border-primary" id="redGem" alt="This is a red gem"> </img> 
+    </div>
+
+    <div class="userTotal bg-danger mb-3" style="max-width: 18rem;">
+        <h2>Your total score is:
+            <span id="finalTotal"></span>
+        </h2>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+  </body>
+</html>
